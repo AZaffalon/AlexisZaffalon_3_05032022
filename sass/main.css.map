@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,kBAAe;CAKX;;AAT7B,AAMI,MANE,CAMF,GAAG,CAAC;EACA,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,IAAI;CAAG",
+    "sources": [
+        "main.scss",
+        "base/_typography.sass",
+        "layout/_header.sass",
+        "layout/_footer.sass",
+        "components/_button.sass",
+        "utils/_variables.sass"
+    ],
+    "names": [],
+    "file": "main.css"
+}

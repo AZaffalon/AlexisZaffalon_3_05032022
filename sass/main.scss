@@ -1,0 +1,14 @@
+// Importe all sass files here 
+
+// Base
+@import "./base/typography";
+
+// Layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// Components
+@import"./components/button";
+
+// Utils
+@import "./utils/variables"
