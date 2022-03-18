@@ -1,11 +1,21 @@
-button {
+.explorer {
   background: linear-gradient(176deg, #ff8ade 0%, #8f33ff 120%);
   width: 70%;
   height: 50px;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   font-size: 16px;
   border: 0;
+  text-decoration: none;
 }
 
 header {
@@ -39,12 +49,13 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.13);
 }
 
 .localisation p {
   font-family: "Roboto", sans-serif;
   margin-left: 15px;
-  font-weight: 600;
 }
 
 .explication {
@@ -75,9 +86,10 @@ header h1 {
   text-align: center;
   margin-top: 0;
   font-size: 19px;
+  font-weight: 200;
 }
 
-.explication button {
+.explication a {
   margin-top: 15px;
 }
 
@@ -154,6 +166,11 @@ section.fonctionnement-container .fonctionnement .circle-number {
   margin-left: 5%;
 }
 
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants .restaurant-card {
   width: 90%;
   margin-left: 5%;
@@ -161,6 +178,10 @@ section.fonctionnement-container .fonctionnement .circle-number {
   border-radius: 18px;
   margin-bottom: 20px;
   height: 260px;
+}
+
+.restaurants .restaurant-card p {
+  text-decoration: none;
 }
 
 .restaurants .restaurant-card .restaurant-image {
@@ -185,11 +206,13 @@ section.fonctionnement-container .fonctionnement .circle-number {
 .restaurants .restaurant-card .restaurant-name {
   margin: 15px 0px 0px 0px;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .restaurants .restaurant-card .restaurant-localisation {
   margin: 5px 0px 0px 0px;
   font-size: 18px;
+  font-weight: 300;
 }
 
 .restaurants .restaurant-card .nouveau {
