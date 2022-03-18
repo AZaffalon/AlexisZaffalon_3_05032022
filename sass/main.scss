@@ -2,13 +2,13 @@
 
 // Base
 @import "./base/typography";
+// Utils
+@import "./utils/variables";
+// Components
+@import"./components/button";
 
 // Layout
 @import "./layout/header";
 @import "./layout/footer";
-
-// Components
-@import"./components/button";
-
-// Utils
-@import "./utils/variables"
+@import "./layout/localisation";
+@import "./layout/explication";
