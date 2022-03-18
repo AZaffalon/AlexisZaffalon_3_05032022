@@ -33,23 +33,24 @@
 
         <section class="fonctionnement-container">
             <h1>Fonctionnement</h1>
-            <div class="fonctionnement-wrapper">
-                <!-- Mettre les 3 étapes -->
-                <div class="fonctionnement">
-                    <div class="circle-number"> 1 </div>
-                    <!-- mettre l'icône ici -->
-                    <p>Choisissez votre restaurant</p>
-                </div>
-                <div class="fonctionnement">
-                    <div class="circle-number"> 2 </div>
-                    <!-- mettre l'icône ici -->
-                    <p>Composez votre menu</p>
-                </div>
-                <div class="fonctionnement">
-                    <div class="circle-number"> 3 </div>
-                    <!-- mettre l'icône ici -->
-                    <p>Dégustez au restaurant</p>
-                </div>
+            <!-- Mettre les 3 étapes -->
+            <div class="fonctionnement">
+                <div class="circle-number"> 1 </div>
+                <!-- mettre l'icône ici -->
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Choisissez votre restaurant</p>
+            </div>
+            <div class="fonctionnement">
+                <div class="circle-number"> 2 </div>
+                <!-- mettre l'icône ici -->
+                <i class="fa-solid fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="fonctionnement">
+                <div class="circle-number"> 3 </div>
+                <!-- mettre l'icône ici -->
+                <i class="fa-solid fa-store"></i>
+                <p>Dégustez au restaurant</p>
             </div>
         </section>
 
@@ -58,7 +59,11 @@
             <!-- Mettre les 4 cards correspondants à chaque restaurants-->
             <div class="restaurant-card">
                 <!-- mettre l'image ici -->
-                <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat dans le restaurant La palette du goût">
+                <div class="restaurant-image" style="background-image: url(./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <div class="nouveau">
+                        Nouveau
+                    </div>
+                </div>
                 <div class="restaurant-infos">
                     <p class="restaurant-name">La palette du goût</p>
                     <p class="restaurant-localisation">Ménilmontant</p>
@@ -68,7 +73,11 @@
 
             <div class="restaurant-card">
                 <!-- mettre l'image ici -->
-                <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat dans le restaurant La note enchantée">
+                <div class="restaurant-image" style="background-image: url(./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                    <div class="nouveau">
+                        Nouveau
+                    </div>
+                </div>
                 <div class="restaurant-infos">
                     <p class="restaurant-name">La note enchantée</p>
                     <p class="restaurant-localisation">Charonne</p>
@@ -78,7 +87,8 @@
 
             <div class="restaurant-card">
                 <!-- mettre l'image ici -->
-                <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat dans le restaurant À la française">
+                <div class="restaurant-image" style="background-image: url(./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                </div>
                 <div class="restaurant-infos">
                     <p class="restaurant-name">À la française</p>
                     <p class="restaurant-localisation">Cité rouge</p>
@@ -88,7 +98,8 @@
 
             <div class="restaurant-card">
                 <!-- mettre l'image ici -->
-                <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat dans le restaurant Le délice des sens">
+                <div class="restaurant-image" style="background-image: url(./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                </div>
                 <div class="restaurant-infos">
                     <p class="restaurant-name">Le délice des sens</p>
                     <p class="restaurant-localisation">Folie-Méricourt</p>
@@ -103,10 +114,12 @@
             <nav>
                 <span>
                     <!--Mettre l'icône ici-->
+                    <i class="fa-solid fa-utensils"></i>
                     <a href="#">Proposer un restaurant</a>
                 </span>
                 <span>
                     <!--Mettre l'icône ici-->
+                    <i class="fa-solid fa-handshake-angle"></i>
                     <a href="#">Devenir partenaire</a>
                 </span>
                 <a href="#">Mention légales</a>
