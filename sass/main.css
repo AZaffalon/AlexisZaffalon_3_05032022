@@ -26,6 +26,56 @@
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
+.heart-full {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.heart-full:hover {
+  background: linear-gradient(32deg, #ff8ade 0%, #8f33ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  -webkit-animation: 600ms heart-full ease-in;
+          animation: 600ms heart-full ease-in;
+}
+
+@-webkit-keyframes heart-full {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart-full {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,56 +331,6 @@ section.fonctionnement-container .fonctionnement .circle-number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.restaurants .restaurant-card .restaurant-infos-container i {
-  font-size: 24px;
-  font-weight: 100;
-}
-
-.restaurants .restaurant-card .restaurant-infos-container i:hover {
-  background: linear-gradient(32deg, #ff8ade 0%, #8f33ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  -webkit-animation: 600ms heart-full ease-in;
-          animation: 600ms heart-full ease-in;
-}
-
-@-webkit-keyframes heart-full {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes heart-full {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .restaurants .restaurant-card .restaurant-name {
