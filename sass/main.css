@@ -96,6 +96,13 @@ header h1 {
   font-size: 32px;
 }
 
+header .arrow-header {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  color: black;
+}
+
 footer {
   background-color: #353535;
   padding: 20px;
