@@ -76,6 +76,31 @@
   }
 }
 
+.restaurant-image-menu {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.restaurant-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 50px;
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  padding: 10px;
+}
+
+.restaurant-title h1 {
+  margin-left: 15px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

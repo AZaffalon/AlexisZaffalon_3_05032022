@@ -5,9 +5,11 @@
 // Utils
 @import "./utils/variables";
 // Components
-@import"./components/button";
-@import"./components/heart";
+@import "./components/button";
+@import "./components/heart";
 
+// Pages
+@import "./pages/_menu.sass";
 // Layout
 @import "./layout/header";
 @import "./layout/footer";
