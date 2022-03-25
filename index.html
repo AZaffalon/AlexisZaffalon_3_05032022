@@ -14,6 +14,7 @@
         <title>Ohmyfood</title>
     </head>
     <body>
+        <div class="spinner"></div>
 
         <header>
             <h1>ohmyfood</h1>
@@ -67,10 +68,15 @@
                             Nouveau
                         </div>
                     </div>
-                    <div class="restaurant-infos">
-                        <p class="restaurant-name">La palette du goût</p>
-                        <p class="restaurant-localisation">Ménilmontant</p>
+                    <div class="restaurant-infos-container">
+                        <div class="restaurant-infos">
+                            <p class="restaurant-name">La palette du goût</p>
+                            <p class="restaurant-localisation">Ménilmontant</p>
+                        </div>
                         <!-- mettre le coeur ici -->
+                        <div>
+                            <i class="fa-regular fa-heart heart-full"></i>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -83,10 +89,15 @@
                             Nouveau
                         </div>
                     </div>
-                    <div class="restaurant-infos">
-                        <p class="restaurant-name">La note enchantée</p>
-                        <p class="restaurant-localisation">Charonne</p>
+                    <div class="restaurant-infos-container">
+                        <div class="restaurant-infos">
+                            <p class="restaurant-name">La note enchantée</p>
+                            <p class="restaurant-localisation">Charonne</p>
+                        </div>
                         <!-- mettre le coeur ici -->
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -96,10 +107,15 @@
                     <!-- mettre l'image ici -->
                     <div class="restaurant-image" style="background-image: url(./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)">
                     </div>
-                    <div class="restaurant-infos">
-                        <p class="restaurant-name">À la française</p>
-                        <p class="restaurant-localisation">Cité rouge</p>
+                    <div class="restaurant-infos-container">
+                        <div class="restaurant-infos">
+                            <p class="restaurant-name">À la française</p>
+                            <p class="restaurant-localisation">Cité rouge</p>
+                        </div>
                         <!-- mettre le coeur ici -->
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -109,10 +125,15 @@
                     <!-- mettre l'image ici -->
                     <div class="restaurant-image" style="background-image: url(./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)">
                     </div>
-                    <div class="restaurant-infos">
-                        <p class="restaurant-name">Le délice des sens</p>
-                        <p class="restaurant-localisation">Folie-Méricourt</p>
+                    <div class="restaurant-infos-container">
+                        <div class="restaurant-infos">
+                            <p class="restaurant-name">Le délice des sens</p>
+                            <p class="restaurant-localisation">Folie-Méricourt</p>
+                        </div>
                         <!-- mettre le coeur ici -->
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -120,20 +141,20 @@
 
         <footer>
             <!-- Mettre le 2ème logo -->
-            <img src="public/images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+            <h1>ohmyfood</h1>
             <nav>
-                <span>
+                <span class="m-bottom">
                     <!--Mettre l'icône ici-->
                     <i class="fa-solid fa-utensils"></i>
                     <a href="#">Proposer un restaurant</a>
                 </span>
-                <span>
+                <span class="m-bottom">
                     <!--Mettre l'icône ici-->
                     <i class="fa-solid fa-handshake-angle"></i>
                     <a href="#">Devenir partenaire</a>
                 </span>
-                <a href="#">Mention légales</a>
-                <a href="#">Contact</a>
+                <a href="#" class="m-bottom">Mention légales</a>
+                <a href="#" class="m-bottom">Contact</a>
             </nav>
 
         </footer>
