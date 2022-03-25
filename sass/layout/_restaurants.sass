@@ -1,0 +1,80 @@
+// À déplacer autre part pour le loading spinner !
+// body
+//     animation: 3s loading
+//     @keyframes loading
+//         from
+//             opacity: 0
+
+//         to
+//             opacity: 1
+
+//         90%
+//             opacity: 0
+/////////////////////////////////////////////////////////////////////////////
+
+.restaurants
+    font-family: $text-font
+    display: flex
+    flex-direction: column
+    background-color: $background-lightgrey
+    padding: 40px 0px
+    
+    h1
+        margin-left: 5%
+
+    a
+        text-decoration: none
+        color: black
+
+    .restaurant-card
+        width: 90%
+        margin-left: 5%
+        background-color: white
+        border-radius: 18px
+        margin-bottom: 20px
+        height: 260px
+        box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2)
+
+        p
+            text-decoration: none
+
+        .restaurant-image
+            border-radius: 18px 18px 0px 0px
+            height: 70%
+            background-size: cover
+            background-position: bottom
+
+        img
+            width: 100%
+            border-radius: 18px 18px 0px 0px
+            height: 70%
+            object-fit: cover
+
+        .restaurant-infos-container
+            padding: 0px 15px
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        .restaurant-name
+            margin: 15px 0px 0px 0px
+            font-size: 18px
+            font-weight: 600
+
+        .restaurant-localisation
+            margin: 5px 0px 0px 0px
+            font-size: 18px
+            font-weight: 300
+
+        .nouveau
+            position: relative
+            display: flex
+            width: 85px
+            height: 30px
+            background-color: #99E2D0
+            align-items: center
+            justify-content: center
+            border-radius: 2px
+            top: 6%
+            left: 72%
+            color: #008766
