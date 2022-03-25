@@ -1,6 +1,6 @@
 .explorer {
   background: linear-gradient(176deg, #ff8ade 0%, #8f33ff 120%);
-  width: 70%;
+  width: 65%;
   height: 50px;
   border-radius: 25px;
   display: -webkit-box;
@@ -16,6 +16,14 @@
   font-size: 16px;
   border: 0;
   text-decoration: none;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.explorer:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 header {
@@ -36,6 +44,54 @@ header h1 {
   font-weight: normal;
   margin: 0;
   font-size: 32px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+
+footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .icon-container {
+  width: 10px;
+}
+
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+footer a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+footer a, footer i, footer h1 {
+  color: #ffffff;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .m-bottom {
+  margin-bottom: 10px;
+}
+
+footer span a {
+  margin-left: 5px;
 }
 
 .localisation {
@@ -70,7 +126,7 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10%;
+  padding: 7%;
   background-color: #F8F8F8;
   height: 222px;
 }
@@ -85,7 +141,7 @@ header h1 {
 .explication p {
   text-align: center;
   margin-top: 0;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 200;
 }
 
@@ -119,7 +175,20 @@ section.fonctionnement-container .fonctionnement {
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+section.fonctionnement-container .fonctionnement:hover {
+  background-color: #F6EDFF;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+section.fonctionnement-container .fonctionnement:hover i {
+  color: #9356DC;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
 section.fonctionnement-container .fonctionnement p {
+  font-weight: 500;
   margin-left: 20px;
 }
 
@@ -159,7 +228,7 @@ section.fonctionnement-container .fonctionnement .circle-number {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #F8F8F8;
-  padding-top: 40px;
+  padding: 40px 0px;
 }
 
 .restaurants h1 {
@@ -178,6 +247,8 @@ section.fonctionnement-container .fonctionnement .circle-number {
   border-radius: 18px;
   margin-bottom: 20px;
   height: 260px;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .restaurants .restaurant-card p {
@@ -199,8 +270,67 @@ section.fonctionnement-container .fonctionnement .circle-number {
      object-fit: cover;
 }
 
-.restaurants .restaurant-card .restaurant-infos {
-  padding-left: 15px;
+.restaurants .restaurant-card .restaurant-infos-container {
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurants .restaurant-card .restaurant-infos-container i {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.restaurants .restaurant-card .restaurant-infos-container i:hover {
+  background: linear-gradient(32deg, #ff8ade 0%, #8f33ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  -webkit-animation: 600ms heart-full ease-in;
+          animation: 600ms heart-full ease-in;
+}
+
+@-webkit-keyframes heart-full {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart-full {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .restaurants .restaurant-card .restaurant-name {
@@ -229,9 +359,9 @@ section.fonctionnement-container .fonctionnement .circle-number {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 3px;
-  top: 10px;
-  left: 275px;
+  border-radius: 2px;
+  top: 6%;
+  left: 72%;
   color: #008766;
 }
 /*# sourceMappingURL=main.css.map */
