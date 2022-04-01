@@ -1,4 +1,38 @@
-.explorer {
+.restaurant-title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+.menu-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.meal-infos {
+  font-family: "Roboto", sans-serif;
+}
+
+.meal-infos p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.meal-infos span p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.meal-price {
+  font-weight: 500;
+}
+
+.main-button {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-button {
   background: linear-gradient(176deg, #ff8ade 0%, #8f33ff 120%);
   width: 65%;
   height: 50px;
@@ -20,10 +54,14 @@
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.explorer:hover {
+.main-button:hover {
   opacity: 0.9;
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.main-button--menu {
+  width: 55%;
 }
 
 .heart-full {
@@ -83,6 +121,12 @@
   background-size: cover;
 }
 
+section.menu-container {
+  padding: 0 10px 0 10px;
+  margin-bottom: 23%;
+  margin-top: -55px;
+}
+
 .restaurant-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,15 +134,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   bottom: 50px;
   background-color: white;
   border-radius: 40px 40px 0 0;
-  padding: 10px;
+  padding: 18px 18px 0 18px;
 }
 
-.restaurant-title h1 {
-  margin-left: 15px;
+.restaurant-title i {
+  margin-right: 15px;
+}
+
+.menu-title::after {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.button-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
@@ -395,5 +461,40 @@ section.fonctionnement-container .fonctionnement .circle-number {
   top: 6%;
   left: 72%;
   color: #008766;
+}
+
+.menu {
+  margin-bottom: 40px;
+}
+
+.meal {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.meal-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px 10px 10px;
+}
+
+.meal-infos span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=main.css.map */
