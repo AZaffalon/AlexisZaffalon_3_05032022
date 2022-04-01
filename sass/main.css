@@ -1,4 +1,38 @@
-.explorer {
+.restaurant-title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+.menu-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.meal-infos {
+  font-family: "Roboto", sans-serif;
+}
+
+.meal-infos p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.meal-infos span p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.meal-price {
+  font-weight: 500;
+}
+
+.main-button {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-button {
   background: linear-gradient(176deg, #ff8ade 0%, #8f33ff 120%);
   width: 65%;
   height: 50px;
@@ -20,10 +54,14 @@
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.explorer:hover {
+.main-button:hover {
   opacity: 0.9;
   -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.main-button--menu {
+  width: 55%;
 }
 
 .heart-full {
@@ -76,6 +114,59 @@
   }
 }
 
+.restaurant-image-menu {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.menu-container {
+  padding: 0 10px 0 10px;
+  margin-bottom: 23%;
+  margin-top: -55px;
+}
+
+.restaurant-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: 50px;
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  padding: 18px 18px 0 18px;
+}
+
+.restaurant-title i {
+  margin-right: 15px;
+}
+
+.menu-title::after {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.button-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +185,13 @@ header h1 {
   font-weight: normal;
   margin: 0;
   font-size: 32px;
+}
+
+header .arrow-header {
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  color: black;
 }
 
 footer {
@@ -363,5 +461,128 @@ section.fonctionnement-container .fonctionnement .circle-number {
   top: 6%;
   left: 72%;
   color: #008766;
+}
+
+.menu {
+  margin-bottom: 40px;
+}
+
+.all-meals {
+  opacity: 1;
+  -webkit-animation: 1s all-meals-apparition ease-out;
+          animation: 1s all-meals-apparition ease-out;
+}
+
+.meal {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.meal:nth-child(1) {
+  -webkit-animation: 2.2s meal-apparition;
+          animation: 2.2s meal-apparition;
+}
+
+.meal:nth-child(2) {
+  -webkit-animation: 2.4s meal-apparition;
+          animation: 2.4s meal-apparition;
+}
+
+.meal:nth-child(3) {
+  -webkit-animation: 2.6s meal-apparition;
+          animation: 2.6s meal-apparition;
+}
+
+.meal:nth-child(4) {
+  -webkit-animation: 2.8s meal-apparition;
+          animation: 2.8s meal-apparition;
+}
+
+.meal-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px 10px 10px;
+}
+
+.meal-infos span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+}
+
+@-webkit-keyframes all-meals-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes all-meals-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes meal-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes meal-apparition {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
