@@ -1,25 +1,21 @@
 .menu
     margin-bottom: 40px
 
-.all-meals
-    opacity: 1
-    animation: 1s all-meals-apparition ease-out
-
 .meal
     margin-bottom: 10px
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1)
     border-radius: 15px
     &:nth-child(1)
-        animation: 2.2s meal-apparition
+        animation: 2s meal-apparition
         
     &:nth-child(2)
-        animation: 2.4s meal-apparition
+        animation: 2.5s meal-apparition
 
     &:nth-child(3)
-        animation: 2.6s meal-apparition
+        animation: 3s meal-apparition
 
     &:nth-child(4)
-        animation: 2.8s meal-apparition
+        animation: 3.5s meal-apparition
 
         
         
@@ -35,22 +31,12 @@
         justify-content: space-between
         margin-top: 5px
 
-@keyframes all-meals-apparition
-    0%
-        opacity: 0
-    90%
-        opacity: 0
-    95%
-        opacity: 0.5
-    100%
-        opacity: 1
-
 @keyframes meal-apparition
-    0%
+    from
+        transform: translateY(50%)
         opacity: 0
-    90%
-        opacity: 0
-        transform: translateY(5px)
-    100%
+    to
+        transform: translateY(0%)
         opacity: 1
-        transform: translateY(0)
+    30%
+        opacity: 0

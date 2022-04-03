@@ -467,12 +467,6 @@ section.fonctionnement-container .fonctionnement .circle-number {
   margin-bottom: 40px;
 }
 
-.all-meals {
-  opacity: 1;
-  -webkit-animation: 1s all-meals-apparition ease-out;
-          animation: 1s all-meals-apparition ease-out;
-}
-
 .meal {
   margin-bottom: 10px;
   -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -481,23 +475,23 @@ section.fonctionnement-container .fonctionnement .circle-number {
 }
 
 .meal:nth-child(1) {
-  -webkit-animation: 2.2s meal-apparition;
-          animation: 2.2s meal-apparition;
+  -webkit-animation: 2s meal-apparition;
+          animation: 2s meal-apparition;
 }
 
 .meal:nth-child(2) {
-  -webkit-animation: 2.4s meal-apparition;
-          animation: 2.4s meal-apparition;
+  -webkit-animation: 2.5s meal-apparition;
+          animation: 2.5s meal-apparition;
 }
 
 .meal:nth-child(3) {
-  -webkit-animation: 2.6s meal-apparition;
-          animation: 2.6s meal-apparition;
+  -webkit-animation: 3s meal-apparition;
+          animation: 3s meal-apparition;
 }
 
 .meal:nth-child(4) {
-  -webkit-animation: 2.8s meal-apparition;
-          animation: 2.8s meal-apparition;
+  -webkit-animation: 3.5s meal-apparition;
+          animation: 3.5s meal-apparition;
 }
 
 .meal-infos {
@@ -524,65 +518,35 @@ section.fonctionnement-container .fonctionnement .circle-number {
   margin-top: 5px;
 }
 
-@-webkit-keyframes all-meals-apparition {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes all-meals-apparition {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes meal-apparition {
-  0% {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
     opacity: 0;
   }
-  90% {
-    opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  }
+  30% {
+    opacity: 0;
   }
 }
 
 @keyframes meal-apparition {
-  0% {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
     opacity: 0;
   }
-  90% {
-    opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  }
+  30% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
