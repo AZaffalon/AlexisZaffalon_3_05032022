@@ -17,6 +17,9 @@
   margin: 0;
   font-weight: 500;
   font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .meal-infos span p {
@@ -200,6 +203,47 @@
 }
 
 @keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.check-meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0%;
+  background-color: #99E2D0;
+  color: white;
+  font-size: 20px;
+  -webkit-transition: width 700ms;
+  transition: width 700ms;
+}
+
+.check-meal i {
+  margin-left: 30%;
+}
+
+@-webkit-keyframes check-rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes check-rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -564,6 +608,30 @@ section.fonctionnement-container .fonctionnement .circle-number {
   -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.meal:hover {
+  cursor: pointer;
+}
+
+.meal:hover .meal-infos {
+  width: 75%;
+}
+
+.meal:hover .check-meal {
+  width: 25%;
+}
+
+.meal:hover .check-meal i {
+  -webkit-animation: check-rotate 700ms;
+          animation: check-rotate 700ms;
 }
 
 .meal:nth-child(1) {
@@ -595,6 +663,13 @@ section.fonctionnement-container .fonctionnement .circle-number {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px 20px 10px 10px;
+  width: 100%;
+  -webkit-transition: width 700ms;
+  transition: width 700ms;
+}
+
+.meal-infos p {
+  width: 82%;
 }
 
 .meal-infos span {
