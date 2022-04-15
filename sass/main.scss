@@ -2,8 +2,10 @@
 
 // Base
 @import "./base/typography";
+
 // Utils
 @import "./utils/variables";
+
 // Components
 @import "./components/button";
 @import "./components/heart";
@@ -13,6 +15,7 @@
 // Pages
 @import "./pages/all-menu";
 @import "./pages/responsive";
+
 // Layout
 @import "./layout/header";
 @import "./layout/footer";
