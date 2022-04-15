@@ -124,7 +124,7 @@
 }
 
 #spinner {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -256,11 +256,12 @@
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 section.menu-container {
   padding: 0 10px 0 10px;
-  margin-bottom: 23%;
+  margin-bottom: 10%;
   margin-top: -55px;
 }
 
@@ -302,6 +303,82 @@ section.menu-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10%;
+}
+
+@media screen and (min-width: 767px) {
+  .fonctionnement-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fonctionnement-container .fonctionnement-wrapper {
+    width: 70%;
+  }
+  section.restaurants h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  section.restaurants .wrapper {
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+  .all-meals {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .restaurant-title i {
+    margin-right: 15%;
+  }
+  .restaurant-title h1 {
+    margin-left: 15%;
+  }
+  .menu-title {
+    margin-left: 15%;
+  }
+  footer h1 {
+    text-align: center;
+  }
+  footer nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-button {
+    width: 45%;
+  }
+  section.restaurants h1 {
+    margin-left: 0;
+    margin-bottom: 4%;
+  }
+  .responsive-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .responsive-wrapper a {
+    width: 50%;
+  }
+  .nav-responsive {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 5% 0 5% 0;
+  }
 }
 
 header {
@@ -545,7 +622,7 @@ section.fonctionnement-container .fonctionnement .circle-number {
   border-radius: 18px 18px 0px 0px;
   height: 70%;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 .restaurants .restaurant-card img {

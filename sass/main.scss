@@ -11,7 +11,8 @@
 @import "./components/meal-validation";
 
 // Pages
-@import "./pages/_all-menu.sass";
+@import "./pages/all-menu";
+@import "./pages/responsive";
 // Layout
 @import "./layout/header";
 @import "./layout/footer";
