@@ -623,6 +623,12 @@ section.fonctionnement-container .fonctionnement .circle-number {
   height: 70%;
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .restaurants .restaurant-card img {
@@ -659,7 +665,6 @@ section.fonctionnement-container .fonctionnement .circle-number {
 }
 
 .restaurants .restaurant-card .nouveau {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,6 +681,7 @@ section.fonctionnement-container .fonctionnement .circle-number {
   top: 6%;
   left: 72%;
   color: #008766;
+  margin: 10px;
 }
 
 .menu {
